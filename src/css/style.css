@@ -1,0 +1,164 @@
+:root{
+    --white-20:     oklch(1 0 0 / 20%);
+    --white-70:     oklch(1 0 0 / 70%);
+    --slate-100:    oklch(96.8% 0.007 247.896);
+    --slate-600:    oklch(44.6% 0.043 257.281);
+    --indigo-600:   oklch(58.5% 0.233 277.117);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar, .navbar-menu, .navbar-logo, .hero-btn, .features-title-container, .features-content-container, .features-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-lg{
+    padding: 12px 24px;
+    border-radius: 0.375rem;
+}
+
+.btn{
+    padding: 8px 16px;
+    border-radius: 0.375rem;
+}
+
+.btn-indigo{
+    background-color: var(--indigo-600);
+}
+
+.btn-transparent{
+    background-color: none;
+    border: 1px var(--white-20) solid;
+}
+
+.btn-text{
+    text-align: center;
+    text-decoration: none;
+}
+
+.text-logo{
+    text-decoration: none;
+}
+
+.text{
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.text-no_weight{
+    font-weight: 400;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-slate-600{
+    color: var(--slate-600)
+}
+
+.text-sm{
+    font-size: 14px;
+}
+
+.text-base{
+    font-size: 16px;
+}
+
+.text-lg{
+    font-size: 18px;
+}
+
+.text-xl{
+    font-size: 30px;
+}
+
+.text-xxl{
+    font-size: 36px;
+}
+
+.tight{
+    letter-spacing: -0.025em;
+}
+
+.navbar{
+    position: sticky;
+    width: 100vw;
+
+    background-color: var(--white-70);
+    border-bottom: 1px var(--slate-100) solid;
+    z-index: 1;
+    justify-content: space-between;
+    
+}
+.navbar-logo {
+    padding-left: 14px;
+}
+
+.navbar-logo svg{
+    color: var(--indigo-600);
+}
+
+.navbar-menu{
+    list-style-type: none;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+}
+
+.navbar-btn {
+    margin-right:  24px;
+}
+
+.hero-container{
+    background: url("/src/assets/img/hero-banner.jpg") no-repeat center/cover;
+    text-align: center;
+    padding: 180px 0px;
+    margin-bottom: 40px;
+}
+
+.hero-title{
+    margin-bottom: 24px;
+}
+
+.hero-text{
+    margin-bottom: 40px;
+}
+
+.hero-btn{
+    gap: 18px;
+}
+
+.features-title-container {
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.features-title, .features-text{
+    margin: 0;
+}
+
+.features-title{
+    margin-bottom: 16px;
+}
+
+.features-content-container{
+    margin: 0 96px;
+    flex-wrap: wrap;
+}
+
+.features-content {
+    flex-direction: column;
+    padding: 0 24px;
+    
+}
